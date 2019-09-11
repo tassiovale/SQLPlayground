@@ -1,3 +1,9 @@
+CREATE DATABASE BDBar;
+GO
+
+USE BDBar;
+GO
+
 CREATE SCHEMA Bar;
 GO
 
@@ -101,14 +107,14 @@ INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitar
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (24,'Skol',28,5);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (25,'Skol',24,5);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (1,'Red Label',2,300);
-INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (1,'√Ågua',15,3);
+INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (1,'¡gua',15,3);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (1,'Suco',4,8);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (1,'Red Bull',4,15);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (2,'Red Label',1,300);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (3,'Red Label',2,300);
-INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (3,'√Ågua',12,3);
+INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (3,'¡gua',12,3);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (3,'Red Bull',8,15);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (4,'Red Label',9,300);
-INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (4,'√Ågua',15,3);
+INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (4,'¡gua',15,3);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (4,'Red Bull',6,15);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (4,'Caipirinha',8,10);
