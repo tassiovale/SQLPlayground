@@ -118,3 +118,23 @@ INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitar
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (4,'Água',15,3);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (4,'Red Bull',6,15);
 INSERT INTO Bar.ProdutosCompra (IdContaBar, NomeProduto, Quantidade, ValorUnitario) VALUES (4,'Caipirinha',8,10);
+
+SELECT * FROM Bar.Vendedor;
+
+SELECT * FROM Bar.ContaBar;
+
+SELECT * FROM Bar.ProdutosCompra;
+
+SELECT IdContaBar, SUM(ValorUnitario * Quantidade) AS ValorConta FROM Bar.ProdutosCompra 
+	GROUP BY IdContaBar;
+
+SELECT IdContaBar, Nome, SUM(ValorUnitario * Quantidade) AS ValorConta FROM Bar.ProdutosCompra p
+	INNER JOIN Bar.ContaBar c ON p.IdContaBar = c.Id
+	INNER JOIN Bar.Vendedor v ON c.IdVendedor = v.Id
+	GROUP BY IdContaBar, Nome;
+
+SELECT Nome, SUM(ValorUnitario * Quantidade) AS ValorConta FROM Bar.ProdutosCompra p
+	INNER JOIN Bar.ContaBar c ON p.IdContaBar = c.Id
+	INNER JOIN Bar.Vendedor v ON c.IdVendedor = v.Id
+	GROUP BY Nome;
+
